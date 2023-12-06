@@ -1,4 +1,3 @@
-const { Console } = require('console');
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -85,37 +84,3 @@ app.delete('/posts/:id', (req, res) => {
   posts = posts.filter((p) => id !== p.id);
   res.redirect("/posts")
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // app.get("/:name/:id", (req, res) => {
-// //   let{ name,id}=req.params;
-// //   let userid=`<h1>hello@${name}${id}<h1>`
-// //   res.send(userid);
-// //   console.log("respobeja ja chuka h");
-// // })
-// // app.use("/",(req, res)=>{
-// //   res.send("hellobro");
-// //   })
-
-// app.get("/search",(req, res)=>{
-//   let{query}=req.query;
-// res.send(`<h1>your search result${req.query}<h1>`);
-// console.log(req.query);
-// });
