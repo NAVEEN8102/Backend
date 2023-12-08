@@ -23,12 +23,12 @@
         </h1>
     </div>
     <h3 class="ms-4">
-       id: <%= post.id %>
+       id: <%= post._id %>
     </h3><br>
     <h3 class="ms-4">
        Username: @<%=post.username%>
     </h3><br>
-    <form class="ms-4" method="post" action="/posts/<%= post.id %>?_method=PATCH">
+    <form class="ms-4" method="post" action="/posts/<%= post._id %>?_method=PUT">
         <textarea class="p-3" name="content" cols="60" rows="10"><%= post.content %></textarea><br>
         <button class="btn target-btn" type="submit">Save changes</button>
     </form>

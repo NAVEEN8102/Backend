@@ -33,7 +33,7 @@
                 <div class="d-flex">
                     <a type="button" class="btn target-btn" href="http://localhost:8000/posts/<%= posts.id %>">See
                         Post</a>
-                    <a type="button" class="btn target-btn ms-1"href="http://localhost:8000/posts/<%= posts.id %>/edit">Edit</a>
+                    <a type="button" class="btn target-btn ms-1"href="http://localhost:8000/posts/<%= posts._id%>/edit">Edit</a>
                     <form  method="post" action="/posts/<%=posts.id%>?_method=DELETE">
                         <button class="btn target-btn ms-1">Delete</button>
                     </form>
